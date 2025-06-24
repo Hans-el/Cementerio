@@ -6,6 +6,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { ContactarseComponent } from './pages/contactarse/contactarse.component';
+import { LocalizarComponent } from './pages/localizar/localizar.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
+import { DisponibilidadComponent } from './pages/disponibilidad/disponibilidad.component';
+
 
 
 const routes: Routes = [
@@ -15,6 +20,10 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'localizar', component: LocalizarComponent },
+      { path: 'contactarse', component: ContactarseComponent },
+      { path: 'perfil', component: PerfilComponent },
+      { path: 'disponibilidad', component: DisponibilidadComponent },
 
       // Acá añadimos todas las rutas que deben incluir el layout, es decir, que tienen el header y footer
     ]

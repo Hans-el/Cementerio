@@ -14,6 +14,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ContactarseComponent } from './pages/contactarse/contactarse.component';
 //import { RecuperarContrasenaComponent } from './pages/recuperar-contrasena/recuperar-contrasena.component';
+import { LocalizarComponent } from './pages/localizar/localizar.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
+import { DisponibilidadComponent } from './pages/disponibilidad/disponibilidad.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -26,12 +30,16 @@ import { ContactarseComponent } from './pages/contactarse/contactarse.component'
     FooterComponent,
     LayoutComponent,
    // RecuperarContrasenaComponent,
-    ContactarseComponent
+    ContactarseComponent,
+    LocalizarComponent, // Asegúrate de que este componente esté importado si lo necesitas
+    PerfilComponent, // Asegúrate de que este componente esté importado si lo necesitas
+    DisponibilidadComponent // Asegúrate de que este componente esté importado si lo necesitas 
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
     FlatpickrModule.forRoot() // Import Flatpickr module, para la fecha de defuncion
