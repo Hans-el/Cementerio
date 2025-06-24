@@ -1,0 +1,35 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LayoutComponent } from './components/layout/layout.component';
+
+
+const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: 'dashboard', component: DashboardComponent },
+
+      // Acá añadimos todas las rutas que deben incluir el layout, es decir, que tienen el header y footer
+    ]
+  },
+  { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent },
+  // Otras rutas que no deben incluir el layout, es decir, que no tienen el header y footer
+];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule { }

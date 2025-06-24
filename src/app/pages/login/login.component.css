@@ -1,0 +1,89 @@
+.container-fluid {
+  background: url('/assets/images/fondologin2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #6c757d;
+  width: 30px; /* Ajusta el ancho del botón */
+  height: 30px; /* Ajusta el alto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina el padding para reducir el tamaño */
+}
+
+.toggle-password:focus {
+  outline: none;
+}
+
+/* Ajustar el tamaño del icono */
+.toggle-password i {
+  font-size: 16px; /* Ajusta el tamaño del icono */
+}
+
+.rounded-custom {
+  border-radius: 45px; /* redondeo de los bordes */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+  width: 80%; /* ancho del formulario  */
+}
+
+.logo {
+  max-width: 150px; /* Ajusta el tamaño máximo del logo según sea necesario */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.text-container {
+  background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+  border-radius: 56px; /* Bordes redondeados */
+  padding: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
+  width: 90%;
+}
+
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+.form-control {
+  border-radius: 56px; /* Bordes redondeados para los campos de entrada */
+  
+}
+
+.btn {
+  border-radius: 56px; /* Bordes redondeados para el botón */
+  background-color: #5d768b; /* Color del botón */
+  padding: 10px 20px; /* Espacio interno del botón */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto del botón */
+}
+.logo {
+  max-width: 180px; /* Ajusta el tamaño máximo del logo según sea necesario */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.mb-3 {
+  margin-bottom: 1rem; /* Espacio entre el logo y el formulario */
+}
