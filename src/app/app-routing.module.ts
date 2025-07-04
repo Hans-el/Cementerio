@@ -25,12 +25,12 @@ const routes: Routes = [
       { path: 'perfil', component: PerfilComponent },
       { path: 'disponibilidad', component: DisponibilidadComponent },
 
-      // Acá añadimos todas las rutas que deben incluir el layout, es decir, que tienen el header y footer
+      // añadir todas las rutas que tengan el header y footer.
     ]
   },
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
-  // Otras rutas que no deben incluir el layout, es decir, que no tienen el header y footer
+  // y acá añadir las rutas que no lleven el header ni footer
 ];
 @NgModule({
   imports: [

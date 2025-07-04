@@ -1,9 +1,96 @@
 .main-footer {
-  background-color: #ffffff;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
-  color: black;
+  background-color: #f8f9fa;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer-section h4 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-subscribe {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.subscribe-button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-button:hover {
+  background-color: #d0d0d0;
+}
+
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+}
+
+.footer-icons img {
+  width: 24px; /* Ajusta el ancho de los iconos */
+  height: 24px; /* Ajusta la altura de los iconos */
+}
+
+
+
+.footer-rights{
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  margin-top: 20px;
+}
