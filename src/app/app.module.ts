@@ -33,7 +33,7 @@ import { RouterModule } from '@angular/router';
     ContactarseComponent,
     LocalizarComponent, // Asegúrate de que este componente esté importado si lo necesitas
     PerfilComponent, // Asegúrate de que este componente esté importado si lo necesitas
-    DisponibilidadComponent // Asegúrate de que este componente esté importado si lo necesitas 
+    DisponibilidadComponent, 
   ],
 
   imports: [

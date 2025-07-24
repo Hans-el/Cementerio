@@ -1,6 +1,6 @@
 .main-footer {
   background-color: #f8f9fa;
-  padding: 40px 20px 20px;
+  padding: 30px 20px 6px;
   font-family: Arial, sans-serif;
 }
 
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-around;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 .footer-section {
@@ -44,7 +44,7 @@
 
 .footer-social {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .footer-social a {
@@ -53,7 +53,7 @@
 
 .footer-subscribe {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .subscribe-button {
@@ -73,12 +73,12 @@
 .footer-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 1px;
 }
 
 .footer-icons a {
-  margin: 0 10px;
+  margin: 0 6px;
 }
 
 .footer-icons img {
@@ -92,5 +92,5 @@
   text-align: center;
   font-size: 15px;
   color: #666;
-  margin-top: 20px;
+  margin-top: 2px;
 }
