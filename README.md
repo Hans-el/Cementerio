@@ -1,6 +1,6 @@
 # Sistema de Gestión de un Cementerio Municipal
 
-Este proyecto está pensando para la adminsitración correcta de un cementeiro municipal, con la finalidad de mitigar los procesos manuales sobre la información de difuntos y nichos del predio. 
+Este proyecto está pensando para la administración correcta de un cementeiro municipal, con la finalidad de mitigar los procesos manuales sobre la información de difuntos y nichos del predio. 
 
 # Cementerio
 
