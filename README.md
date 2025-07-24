@@ -1,3 +1,7 @@
+# Sistema de Gestión de un Cementerio Municipal
+
+Este proyecto está pensando para la adminsitración correcta de un cecmenteiro municipal, con la finalidad de mitigar los procesos manuales sobre la información de difuntos y nichos del predio. 
+
 # Cementerio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.19.
