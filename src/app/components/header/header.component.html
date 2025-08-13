@@ -1,14 +1,52 @@
-<header class="main-header">
-  <nav class="navbar">
-    <div class="logo">
-      <img src="/assets/images/logonegro.png" alt="Logo">
+<header class="main-header shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      <!-- Logo con margen -->
+      <a class="navbar-brand d-flex align-items-center ps-3" routerLink="/">
+        <img src="/assets/images/logonegro.png" alt="Logo" height="100" class="me-2">
+        
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto nav-gap">
+          <li class="nav-item">
+            <a class="nav-link nav-box" routerLink="/dashboard" routerLinkActive="active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-box" routerLink="/localizar" routerLinkActive="active">Localizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-box" routerLink="/disponibilidad" routerLinkActive="active">Disponibilidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-box" routerLink="/contactarse" routerLinkActive="active">Contactarse</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-box" href="#" id="perfilDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Perfil
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="perfilDropdown">
+              <li><a class="dropdown-item" routerLink="/perfil">Configuración</a></li>
+              <li><a class="dropdown-item" routerLink="/perfil">Ajustar Perfil</a></li>
+              <li><a class="dropdown-item" routerLink="/perfil">Actualizar Datos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" (click)="logout()">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
     </div>
-    <ul class="nav-list">
-      <li class="nav-item"><a routerLink="/dashboard">Inicio</a></li> 
-      <li class="nav-item"><a routerLink="/localizar">Localizar</a></li>
-      <li class="nav-item"><a routerLink="/disponibilidad">Disponibilidad</a></li>
-      <li class="nav-item"><a routerLink="/contactarse">Contactarse</a></li>
-      <li class="nav-item"><a routerLink="/perfil">Perfil</a></li>
-    </ul>
   </nav>
 </header>

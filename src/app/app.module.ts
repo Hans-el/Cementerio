@@ -31,9 +31,9 @@ import { RouterModule } from '@angular/router';
     LayoutComponent,
    // RecuperarContrasenaComponent,
     ContactarseComponent,
-    LocalizarComponent, // Asegúrate de que este componente esté importado si lo necesitas
-    PerfilComponent, // Asegúrate de que este componente esté importado si lo necesitas
-    DisponibilidadComponent, 
+    LocalizarComponent, 
+    PerfilComponent, 
+    DisponibilidadComponent
   ],
 
   imports: [

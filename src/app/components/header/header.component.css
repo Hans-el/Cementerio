@@ -1,38 +1,92 @@
+/* ====== HEADER ESTILO ====== */
 .main-header {
-  background-color: #ffff;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: center;
+  top: 0;
+  z-index: 1020;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* Logo y texto */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  color: #222;
 }
 
-.nav-list {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  
-  font-size: larger;
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+.navbar-brand img {
+  transition: transform 0.3s ease;
 }
 
-.nav-item {
-  margin: 0 15px;
+.navbar-brand:hover img {
+  transform: scale(1.05);
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
+/* Links del menú */
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-weight: 500;
+  margin-inline-start: 10px; /* Espacio entre enlaces */
 }
 
-.logo img {
-  height: 90px;
+.nav-link:hover,
+.nav-link.active {
+  color: #afb0b3; /* Color Bootstrap primario */
+}
+
+/* ====== DROPDOWN ====== */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.dropdown-menu.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Divider más suave */
+.dropdown-divider {
+  border-color: rgba(0,0,0,0.1);
+}
+
+/* Item de cerrar sesión en rojo */
+.dropdown-item.text-danger:hover {
+  background-color: rgba(255,0,0,0.05);
+}
+
+/* ====== BOTÓN HAMBURGUESA ====== */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+ 
+/* Espaciado entre elementos del menú */
+.nav-gap {
+  gap: 1rem; /* Más separación horizontal */
+}
+
+/* Caja con contorno para cada enlace */
+.nav-box {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0.25rem;
+  padding: 0.3rem 0.8rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.nav-box:hover,
+.nav-box.active {
+  background-color: rgba(33, 44, 199, 0.384);
+  border-color: #a5a7ac;
+  color: #000000 !important;
 }

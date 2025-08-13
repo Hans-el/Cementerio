@@ -1,45 +1,50 @@
-<div class="container-fluid">
-  <div class="row min-vh-100">
-    <div class="col-md-6 d-flex align-items-center justify-content-center">
-      <div class="card shadow-lg p-4 bg-body rounded-custom">
-        <div class="card-body text-center">
-          <!-- Logo en lugar del título -->
-          <img src="/assets/images/logonegro.png" alt="Logo" class="logo mb-4">
-          <form (ngSubmit)="onSubmit()">
-            <div class="mb-3">
-              <label for="cedula" class="form-label">Cédula</label>
-              <input type="text" class="form-control" id="cedula" [(ngModel)]="cedula" name="cedula" required>
+<section class="container-fondo py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="card border border-primary shadow-lg rounded-4">
+          <div class="card-body p-4 p-md-5">
+            <div class="row justify-content-center">
+              <div class="card-body text-center">
+                <!-- Logo -->
+                <img src="/assets/images/logonegro.png" alt="Logo" class="img-fluid mb-4" style="max-width: 150px;">
+              </div>
             </div>
-            <div class="mb-3 position-relative">
-              <label for="contrasena" class="form-label">Contraseña</label>
-              <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="contrasena"
-                [(ngModel)]="contrasena" name="contrasena" required>
-              <button type="button" class="btn btn-outline-secondary toggle-password"
-                (click)="togglePasswordVisibility()">
-                <i class="fas" [ngClass]="{'fa-eye': !showPassword, 'fa-eye-slash': showPassword}"></i>
-              </button>
+            <h3 class="mb-3 text-center">Iniciar Sesión</h3>
+            <form (ngSubmit)="onSubmit()" class="mt-4">
+              <div class="mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="cedula" [(ngModel)]="cedula" name="cedula"
+                    placeholder="Cédula" required>
+                  <label for="cedula">Cédula</label>
+                </div>
+              </div>
+              <div class="mb-3 position-relative">
+                <div class="form-floating">
+                  <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="contrasena"
+                    [(ngModel)]="contrasena" name="contrasena" placeholder="Contraseña" required>
+                  <label for="contrasena">Contraseña</label>
+                </div>
+                <button type="button" class="toggle-password position-absolute end-15 top-50 translate-middle-y me-2"
+                  (click)="togglePasswordVisibility()">
+                  <i class="fas" [ngClass]="{'fa-eye': !showPassword, 'fa-eye-slash': showPassword}"></i>
+                </button>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordarme </label>
+              </div>
+              <br>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Iniciar Sesión</button>
+              </div>
+            </form>
+            <div class="mt-3 text-center">
+              ¿No tienes cuenta? <a [routerLink]="['/registro']" class="text-decoration-none"> Registrarse gratis</a>
             </div>
-            
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-            </div>
-          </form>
-          <div class="mt-3 text-center">
-            <p>¿No tienes cuenta? <a routerLink="/registro">Crear una</a></p>
-            
           </div>
         </div>
-      </div>x
-    </div>
-    
-    <div class="col-md-6 d-flex align-items-center justify-content-center">
-      <div class="text-container">
-        <h1>Cementerio de Colón</h1>
-        <h5>Somos Hogar, somos Familia</h5>
-        <br>
-        <h6>Conoce la experiencia que el Cementerio de Colón te brinda. Capaz de gestionar tus peticiones donde quieras.
-        </h6>
       </div>
     </div>
   </div>
-</div>
+</section>
