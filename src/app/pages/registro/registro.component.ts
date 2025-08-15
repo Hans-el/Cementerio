@@ -132,6 +132,8 @@ export class RegistroComponent {
           title: 'Registro exitoso!',
           text: 'Usuario registrado correctamente.',
           icon: 'success',
+          timerProgressBar: true,
+          timer: 3000,
           confirmButtonText: 'OK'
         }).then(() => {
           this.router.navigate(['/login']);

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../../services/api.service';
 import Swal from 'sweetalert2';
+import { takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -30,6 +31,8 @@ export class LoginComponent {
         Swal.fire({
           title: 'Inicio de sesión exitoso!',
           text: 'Has iniciado sesión correctamente.',
+          timerProgressBar: true,
+          timer: 2200,
           icon: 'success',
           confirmButtonText: 'OK'
         }).then(() => {
@@ -42,6 +45,8 @@ export class LoginComponent {
         Swal.fire({
           title: 'Error!',
           text: 'Cédula o contraseña incorrectos.',
+          timerProgressBar: true,
+          timer: 2200,
           icon: 'error',
           confirmButtonText: 'OK'
         });
